@@ -242,4 +242,47 @@ nav {
   background-color: black;
 }
 
+.images {
+  display: flex;
+  justify-content: space-between;
+  height: 53.5rem;
+  overflow: hidden;
+}
 
+.images__block {
+  display: flex;
+  width: 33.333%;
+  height: 100%;
+}
+
+.images__block:first-child {
+  flex-direction: column;
+}
+
+.images__block:last-child {
+  flex-direction: column-reverse;
+}
+
+.images__block-item {
+  height: 50%;
+  width: 100%;
+}
+
+.images__block-item:first-of-type {
+  display: flex;
+}
+
+.images__block-item:last-of-type .images__item{
+  width: 100%;
+}
+
+.images__item {
+  width: 50%;
+  height: 100%;
+}
+
+.item__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
